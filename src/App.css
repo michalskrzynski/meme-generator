@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Karla;
+  src: url(assets/Karla-VariableFont_wght.ttf);
+}
+
+:root {
+  --default-gradient: linear-gradient( 90deg,  #672280,  #A626D3);
+}
+
+#root {
+  max-width: 550px;
+  margin: 0 auto;
+
+  font-family: Karla;
+}
+
+.dflex {
+  display: flex;
+}
+
+nav {
+  width: 550px;
+
+  background-image: var(--default-gradient);
+  color: white;
+
+  padding: 20px;
+}
+
+.nav--left {
+  
+}
+
+.nav--right {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.nav--brand {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+main {
+
+}
+
+.content--grid {
+
+  margin: 36px;
+  display: grid;
+  gap: 24px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35px 40px 268px;
+}
+
+.content--row2, .content--row2 {
+  grid-column: 1 / 3;
+}
+
+
+input {
+  width: 100%; 
+  box-sizing: border-box;;
+  font-size: 12px;
+
+  padding: 12px;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+
+  background-image: var(--default-gradient);
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  padding: 12px;
+  text-align: center;
+
+  margin-bottom: 36px;
+}
